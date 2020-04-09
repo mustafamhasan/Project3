@@ -12,16 +12,16 @@ spec:
         service: backend-feed
     spec:
       containers:
-      - image: scheele/udacity-restapi-feed
+      - image: mustafamhasan/udacity-restapi-feed
         name: backend-feed
         imagePullPolicy: Always  
         resources:
           requests:
             memory: "64Mi"
-            cpu: "250m"
+            cpu: "50m"
           limits:
-            memory: "1024Mi"
-            cpu: "500m"                  
+            memory: "512Mi"
+            cpu: "50m"                  
         env:
         - name: URL
           valueFrom:

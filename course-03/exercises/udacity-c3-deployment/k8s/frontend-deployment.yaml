@@ -13,7 +13,7 @@ spec:
         api: external        
     spec:
       containers:
-      - image: scheele/udacity-frontend:local
+      - image: mustafamhasan/udacity-frontend:local
         name: frontend
         imagePullPolicy: Always          
         ports:
@@ -21,9 +21,9 @@ spec:
         resources:
           requests:
             memory: "64Mi"
-            cpu: "250m"
+            cpu: "50m"
           limits:
-            memory: "1024Mi"
-            cpu: "500m"                
+            memory: "512Mi"
+            cpu: "50m"                
       restartPolicy: Always
 
